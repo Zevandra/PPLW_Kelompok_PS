@@ -4,10 +4,7 @@ untuk uts dan uas
 # testing git commit
 gwe males pindah ke akun uner
 
-# tolong siapapun cek github gwe dh mau nangid gtw udah anying gwe mw mandi dlu bay 
+# TUTORIAL BIAR UP TO DATE DENGAN MAIN BRANCH ADA DI FILE HACK MD SCROLL KE BAWAH
+https://hackmd.io/@NotesCuzMyBrainIsFriedISALRTAKENHOWWW/SkbIa7Mczg/edit
 
-ni cik gwe buka 
-=====================
-
-sama sama
------------------
+# RAJIN RAJIN CEK GITHUB AJA YAH
