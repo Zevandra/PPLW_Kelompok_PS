@@ -1,9 +1,13 @@
 <?php
 // this is our own 'bootstrap yeah' 
-spl_autoload_register(function(string $subdir_name, string $class_name)
-{
-    $file = __DIR__ . "/logicgates/".strtolower($subdir_name)."/".strtolower($class_name).".php";
-    if (file_exists($file)) {
-        include_once $file;
+spl_autoload_register(function (string $class_name) {
+    $filename = strtolower($class_name) . ".php";
+
+    foreach (['dbconnection', 'generallogic'] as $subdir) {
+        $file = __DIR__ . "/logicgates/" . $subdir . "/" . $filename;
+        if (file_exists($file)) {
+            include_once $file;
+            return;
+        }
     }
 });
