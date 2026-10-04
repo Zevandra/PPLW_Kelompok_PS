@@ -64,7 +64,7 @@ $db->close_connection();
         </div>
 
         <!-- Unit Tambahan -->
-        <h2 class="section-title" style="margin-top: 70px;">Unit Tambahan Tersedia</h2>
+        <h2 class="section-title" style="margin-top: 70px;">Unit Tersedia</h2>
         <div class="grid">
             <?php if(empty($listUnit)): ?>
                 <p style="text-align:center; grid-column: 1/-1;">Belum ada data unit yang aktif.</p>
