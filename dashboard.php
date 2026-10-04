@@ -19,7 +19,7 @@ $db->close_connection();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AllInOneShop - Booking Dashboard</title>
+    <title>AKU ADMIN PE ES - Booking Dashboard</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; color: #333; }
         .hero { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); color: white; padding: 80px 20px; text-align: center; }
@@ -40,7 +40,7 @@ $db->close_connection();
 <body>
 
     <div class="hero">
-        <h1>AllInOneShop Facilities</h1>
+        <h1>AKU ADMIN PE ES Facilities</h1>
         <p>Lokasi: Pusat Kota Surabaya. Menyediakan Ruangan & Fasilitas Terbaik untuk Kebutuhan Anda.</p>
         <a href="bookingpage.php" class="btn-booking">Booking Jadwal Sekarang</a>
     </div>
