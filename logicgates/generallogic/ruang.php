@@ -13,9 +13,8 @@ class Ruang {
 
     // Required by your bookingpage.php
     public function cariRuangTersedia(string $tanggal, string $jam_mulai, int $durasi): array {
-        // Checks time overlaps against existing approved/pending bookings
         $query = "
-            SELECT r.id, r.nama, r.deskripsi, r.tarif_per_jam, kr.nama as nama_kategori
+            SELECT r.id, r.nama, r.deskripsi, r.tarif_per_jam, r.foto, kr.nama as nama_kategori
             FROM ruang r
             LEFT JOIN kategori_ruang kr ON r.kategori_ruang = kr.id
             WHERE r.is_active = true

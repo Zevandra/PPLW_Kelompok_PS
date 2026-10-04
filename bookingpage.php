@@ -170,6 +170,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['tanggal']) && isset($_G
                     <?php foreach ($ruangTersedia as $ruangData): ?>
                         <?php $totalHarga = (float) $ruangData['tarif_per_jam'] * $durasi; ?>
                         <div class="room-card">
+                            <?php if(!empty($ruangData['foto'])): ?>
+    <img src="uploads/<?= htmlspecialchars($ruangData['foto']) ?>" style="width:100%; height:140px; object-fit:cover; border-radius:6px; margin-bottom:10px;">
+<?php endif; ?>
                             <h5><?= htmlspecialchars($ruangData['nama']) ?></h5>
                             <p><strong>Kategori:</strong> <?= htmlspecialchars($ruangData['nama_kategori'] ?? 'Umum') ?></p>
                             <p><?= htmlspecialchars($ruangData['deskripsi']) ?></p>

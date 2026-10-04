@@ -54,6 +54,9 @@ $db->close_connection();
             <?php else: ?>
                 <?php foreach($listRuang as $r): ?>
                     <div class="card">
+                        <?php if(!empty($r['foto'])): ?>
+    <img src="uploads/<?= htmlspecialchars($r['foto']) ?>" style="width:100%; height:150px; object-fit:cover; border-radius:6px; margin-bottom:10px;">
+<?php endif; ?>
                         <span class="badge"><?= htmlspecialchars($r['nama_kategori'] ?? 'Umum') ?></span>
                         <h3><?= htmlspecialchars($r['nama']) ?></h3>
                         <p><?= htmlspecialchars($r['deskripsi']) ?></p>
@@ -63,7 +66,7 @@ $db->close_connection();
             <?php endif; ?>
         </div>
 
-        <!-- Unit Tambahan -->
+        <!-- Unit Tersedia -->
         <h2 class="section-title" style="margin-top: 70px;">Unit Tersedia</h2>
         <div class="grid">
             <?php if(empty($listUnit)): ?>
@@ -71,6 +74,9 @@ $db->close_connection();
             <?php else: ?>
                 <?php foreach($listUnit as $u): ?>
                     <div class="card" style="border-top-color: #ff4757;">
+                        <?php if(!empty($u['foto'])): ?>
+    <img src="uploads/<?= htmlspecialchars($u['foto']) ?>" style="width:100%; height:130px; object-fit:cover; border-radius:6px; margin-bottom:10px;">
+<?php endif; ?>
                         <span class="badge" style="background: #7bed9f;"><?= htmlspecialchars($u['nama_kategori'] ?? 'Umum') ?></span>
                         <h3><?= htmlspecialchars($u['nama']) ?></h3>
                         <p><?= htmlspecialchars($u['deskripsi']) ?></p>
