@@ -1,2 +1,2 @@
 <?php
-// bikin class booking, kalo ini baru ada create
+// CRUD BOOKINGAN BIAR TINGGAL DICALLING AMA BOOKINGPAGE

@@ -1,3 +1,3 @@
 <?php
 
-// bikin class ruang 
+// CRUD YA GAIS KARENA BIAR ADMIN JUGA BISA MODIF BY CONTROL PANEL
